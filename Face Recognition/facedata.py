@@ -1,12 +1,9 @@
 import csv
-
 import cv2
 import os
 
 
 # counting the numbers
-
-
 def is_number(s):
     try:
         float(s)
@@ -20,16 +17,12 @@ def is_number(s):
         return True
     except (TypeError, ValueError):
         pass
-
+    
     return False
 
 
-
 # Take image function
-
 def takeImages():
-
-
     Id = input("Enter Your Id: ")
     name = input("Enter Your Name: ")
 
@@ -72,5 +65,3 @@ def takeImages():
             print("Enter Alphabetical Name")
         if(name.isalpha()):
             print("Enter Numeric ID")
-
-
